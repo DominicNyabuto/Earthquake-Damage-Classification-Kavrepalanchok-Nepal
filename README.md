@@ -70,7 +70,7 @@ The dataset includes **16 building characteristics**:
 ![Confusion Matrix](results/figures/confusion_matrix_lightgbm.png)
 
 ## Repository Structure
-<pre>```
+<pre>
    ├── notebooks/ # Jupyter notebooks for analysis
    ├── data/ # Dataset files
    ├── models/ # Trained model files
@@ -79,4 +79,4 @@ The dataset includes **16 building characteristics**:
    ├── LICENSE
    ├── requirements.txt
    └── .gitignore
-```</pre>
+</pre>
