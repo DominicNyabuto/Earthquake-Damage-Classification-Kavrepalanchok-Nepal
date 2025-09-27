@@ -34,8 +34,6 @@ This project analyzes over 76,000 building records to predict earthquake damage 
 3. Run the notebook
    ```bash
    jupyter notebook notebooks/earthquake-damage-in-nepal-classification.ipynb
-4. View Results. Note: The LightGBM model achieves 98.89% recall for severe damage detection.
-
 
 ## Dataset (kavrepalanchok_raw.csv) Features
 
@@ -81,4 +79,37 @@ The dataset includes **16 building characteristics**:
 ├── requirements.txt
 └── .gitignore
 
+earthquake-damage-classification-nepal/
+├── README.md
+├── LICENSE
+├── requirements.txt
+├── .gitignore
+├── notebooks/
+│   ├── 01-data-exploration.ipynb
+│   ├── 02-data-preprocessing.ipynb
+│   ├── 03-model-training.ipynb
+│   └── earthquake-damage-in-nepal-classification.ipynb
+├── src/
+│   ├── __init__.py
+│   ├── data_preprocessing.py
+│   ├── feature_engineering.py
+│   ├── model_training.py
+│   └── evaluation.py
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── README.md
+├── models/
+│   ├── saved_models/
+│   └── model_comparison.csv
+├── results/
+│   ├── figures/
+│   ├── classification_reports/
+│   └── confusion_matrices/
+├── docs/
+│   ├── methodology.md
+│   └── model_performance.md
+└── .github/
+    ├── ISSUE_TEMPLATE/
+    └── workflows/
 
