@@ -36,3 +36,49 @@ This project analyzes over 76,000 building records to predict earthquake damage 
    jupyter notebook notebooks/earthquake-damage-in-nepal-classification.ipynb
 4. View Results. Note: The LightGBM model achieves 98.89% recall for severe damage detection.
 
+
+## Dataset (kavrepalanchok_raw.csv) Features
+
+The dataset includes **16 building characteristics**:
+- **Structural**: Foundation type, roof type, superstructure material
+- **Physical**: Age, height, floor count, area
+- **Environmental**: Land surface condition, position
+- **Post-earthquake**: Condition assessment
+
+**Target Variable**: binary target severe_damage (0-1) was derived from damage_grade (Grade 1–5), where 0 = less severe (Grades 1–3) and 1 = severe (Grade 4-5).
+
+## Methodology
+
+### Data Preprocessing
+- **Label Encoding** for categorical variables (efficient for moderate cardinality)
+- **StandardScaler** for numerical features
+- **Binary Classification** (severe_damage column with 0 and 1 as values for severe and less severe damage)
+
+### Model Selection
+1. **Baseline Logistic Regression**
+2. **Tuned Logistic Regression** with GridSearchCV
+3. **Decision Tree** with hyperparameter optimization
+4. **LightGBM** (final model) - chosen for speed and categorical handling
+
+### Evaluation Strategy
+- **Recall-focused metrics** (critical for disaster response)
+- **5-fold Cross-validation**
+- **Comprehensive classification reports**
+
+## Model Performance Visualization
+
+![Model Comparison](results/figures/model_comparison.png)
+![Feature Importance](results/figures/feature_importance_lightgbm.png)
+![Confusion Matrix](results/figures/confusion_matrix_lightgbm.png)
+
+## Repository Structure
+├── notebooks/ # Jupyter notebooks for analysis
+├── data/ # Dataset files
+├── models/ # Trained model files
+├── results/ # Visualizations and reports
+├── README.md
+├── LICENSE
+├── requirements.txt
+└── .gitignore
+
+
