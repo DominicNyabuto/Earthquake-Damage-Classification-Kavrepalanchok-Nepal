@@ -70,14 +70,16 @@ The dataset includes **16 building characteristics**:
 ![Confusion Matrix](results/figures/confusion_matrix_lightgbm.png)
 
 ## Repository Structure
-├── notebooks/ # Jupyter notebooks for analysis
-├── data/ # Dataset files
-├── models/ # Trained model files
-├── results/ # Visualizations and reports
-├── README.md
-├── LICENSE
-├── requirements.txt
-└── .gitignore
+<pre> ```txt
+   ├── notebooks/ # Jupyter notebooks for analysis
+   ├── data/ # Dataset files
+   ├── models/ # Trained model files
+   ├── results/ # Visualizations and reports
+   ├── README.md
+   ├── LICENSE
+   ├── requirements.txt
+   └── .gitignore
+``` </pre>
 
 earthquake-damage-classification-nepal/
 ├── README.md
