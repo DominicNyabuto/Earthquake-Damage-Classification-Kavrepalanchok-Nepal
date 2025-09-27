@@ -23,3 +23,16 @@ This project analyzes over 76,000 building records to predict earthquake damage 
 
 ## Quick Start
 
+1. Clone the repo
+   ```bash
+   git clone https://github.com/DominicNyabuto/Earthquake-Damage-Classification-Kavrepalanchok-Nepal.git
+   cd Earthquake-Damage-Classification-Kavrepalanchok-Nepal
+
+2. Install dependencies
+   ```bash
+   pip install -r requirements.txt
+3. Run the notebook
+   ```bash
+   jupyter notebook notebooks/earthquake-damage-in-nepal-classification.ipynb
+4. View Results. Note: The LightGBM model achieves 98.89% recall for severe damage detection.
+
