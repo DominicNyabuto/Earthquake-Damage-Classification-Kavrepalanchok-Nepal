@@ -70,7 +70,7 @@ The dataset includes **16 building characteristics**:
 ![Confusion Matrix](results/figures/confusion_matrix_lightgbm.png)
 
 ## Repository Structure
-<pre> ```txt
+<pre>```
    ├── notebooks/ # Jupyter notebooks for analysis
    ├── data/ # Dataset files
    ├── models/ # Trained model files
@@ -79,39 +79,4 @@ The dataset includes **16 building characteristics**:
    ├── LICENSE
    ├── requirements.txt
    └── .gitignore
-``` </pre>
-
-earthquake-damage-classification-nepal/
-├── README.md
-├── LICENSE
-├── requirements.txt
-├── .gitignore
-├── notebooks/
-│   ├── 01-data-exploration.ipynb
-│   ├── 02-data-preprocessing.ipynb
-│   ├── 03-model-training.ipynb
-│   └── earthquake-damage-in-nepal-classification.ipynb
-├── src/
-│   ├── __init__.py
-│   ├── data_preprocessing.py
-│   ├── feature_engineering.py
-│   ├── model_training.py
-│   └── evaluation.py
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── README.md
-├── models/
-│   ├── saved_models/
-│   └── model_comparison.csv
-├── results/
-│   ├── figures/
-│   ├── classification_reports/
-│   └── confusion_matrices/
-├── docs/
-│   ├── methodology.md
-│   └── model_performance.md
-└── .github/
-    ├── ISSUE_TEMPLATE/
-    └── workflows/
-
+```</pre>
