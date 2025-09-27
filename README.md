@@ -80,3 +80,22 @@ The dataset includes **16 building characteristics**:
    ├── requirements.txt
    └── .gitignore
 </pre>
+
+
+## Key Insights
+
+1. **High Recall Priority**: In earthquake damage assessment, missing severely damaged buildings (false negatives) is more dangerous than false alarms
+2. **Feature Importance**: Structural materials and building age are primary damage predictors
+3. **Model Choice**: LightGBM balances speed, accuracy, and categorical feature handling effectively
+
+## 🛠️ Technology Stack
+
+- **Python 3.8+**: Core programming language
+- **Pandas & NumPy**: Data manipulation and analysis
+- **Scikit-learn**: Machine learning algorithms and evaluation
+- **LightGBM**: Gradient boosting framework
+- **Matplotlib & Seaborn**: Data visualization
+- **Jupyter Notebook**: Interactive development
+
+## 📋 Requirements
+
