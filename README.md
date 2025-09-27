@@ -1,4 +1,4 @@
-# 🏗️ Earthquake Damage Classification - Kavrepalanchok, Nepal 
+# Earthquake Damage Classification - Kavrepalanchok, Nepal 
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 [![Scikit-learn](https://img.shields.io/badge/sklearn-latest-orange.svg)](https://scikit-learn.org/)
@@ -7,11 +7,11 @@
 
 > Predicting earthquake damage severity in Nepalese buildings using machine learning classification algorithms
 
-## 🎯 Project Overview
+## Project Overview
 
 This project analyzes over 76,000 building records to predict earthquake damage severity (Grades 1-5) using building characteristics and multiple classification algorithms (logistic regression, decision trees, LightGBM). The best model (LightGBM) achieved **98.89% recall** for severe damage detection, making it highly effective for disaster response planning.
 
-## 📊 Key Results
+## Key Results
 
 | Model | Accuracy | Precision | Recall | F1-Score |
 |-------|----------|-----------|--------|----------|
@@ -21,5 +21,5 @@ This project analyzes over 76,000 building records to predict earthquake damage 
 
 *LightGBM emerged as the best model, achieving exceptional recall for identifying severely damaged buildings.*
 
-## 🚀 Quick Start
+## Quick Start
 
