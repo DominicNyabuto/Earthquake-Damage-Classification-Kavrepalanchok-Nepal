@@ -29,3 +29,14 @@ traitlets==5.14.3
 wcwidth==0.2.14
 lightgbm
 graphviz
+streamlit 
+plotly 
+streamlit
+pandas
+numpy
+lightgbm
+plotly
+joblib
+scikit-learn
+seaborn
+category-encoders
