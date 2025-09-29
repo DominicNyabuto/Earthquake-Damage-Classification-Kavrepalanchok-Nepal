@@ -33,7 +33,7 @@ for col in categorical_features:
 
 # --- Streamlit page config ---
 st.set_page_config(page_title="Earthquake Damage Predictor", layout="wide")
-st.title("Earthquake Damage Prediction Dashboard")
+st.title("📢🚨Earthquake Damage Prediction Dashboard")
 st.markdown("Enter building details below to predict earthquake damage severity.")
 
 # --- Sidebar inputs dynamically generated ---
