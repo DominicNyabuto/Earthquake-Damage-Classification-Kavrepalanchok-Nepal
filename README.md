@@ -19,7 +19,7 @@ This project analyzes over 76,000 building records to predict earthquake damage 
 | Decision Tree | 0.6441 | 0.6100 | 0.9856 | 0.7536 |
 | Logistic Regression | 0.6530 | 0.6197 | 0.9342 | 0.7483 |
 
-*LightGBM emerged as the best model, achieving a high recall while maintaining a better balance between recall and precision. It is the most suitable for comprehensive damage assessment tasks where both false positives and false negatives carry significant consequences.*
+*LightGBM emerged as the best model, achieving a high recall while maintaining a better balance between recall and precision. It is most suitable for comprehensive damage assessment tasks where both false positives and false negatives carry significant consequences.*
 
 ## Quick Start
 
@@ -107,5 +107,7 @@ The dataset includes **16 building characteristics**:
 - **Jupyter Notebook**: Interactive development
 
 ## Interactive Web App - Streamlit 
+
+![Streamlit Web App](results/figures/streamlit_app_screenshot.png)
 
 
