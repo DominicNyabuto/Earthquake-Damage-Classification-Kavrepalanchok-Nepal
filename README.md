@@ -9,17 +9,17 @@
 
 ## Project Overview
 
-This project analyzes over 76,000 building records to predict earthquake damage severity (Grades 1-5) using building characteristics and multiple classification algorithms (logistic regression, decision trees, LightGBM). The best model (LightGBM) achieved **98.89% recall** for severe damage detection, making it highly effective for disaster response planning.
+This project analyzes over 76,000 building records to predict earthquake damage severity (Grades 1-5) using building characteristics and multiple classification algorithms (Logistic Regression, Decision Tree, LightGBM). The best model (LightGBM) achieved **92.55% recall** for severe damage detection, making it highly effective for disaster response planning.
 
 ## Key Results
 
 | Model | Accuracy | Precision | Recall | F1-Score |
 |-------|----------|-----------|--------|----------|
-| **LightGBM** | **0.6388** | **0.6044** | **0.9889** | **0.7503** |
-| Decision Tree | 0.6304 | 0.5983 | 0.9933 | 0.7468 |
-| Logistic Regression | 0.6378 | 0.6197 | 0.8799 | 0.7272 |
+| **LightGBM** | **0.6604** | **0.6296** | **0.9255** | **0.7494** |
+| Decision Tree | 0.6441 | 0.6100 | 0.9856 | 0.7536 |
+| Logistic Regression | 0.6530 | 0.6197 | 0.9342 | 0.7483 |
 
-*LightGBM emerged as the best model, achieving exceptional recall for identifying severely damaged buildings.*
+*LightGBM emerged as the best model, achieving a high recall while maintaining a better balance between recall and precision. It is the most suitable for comprehensive damage assessment tasks where both false positives and false negatives carry significant consequences.*
 
 ## Quick Start
 
