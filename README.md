@@ -65,7 +65,7 @@ The dataset includes **16 building characteristics**:
 
 ## Model Performance Visualization
 
-### 1. ClassificationReports
+### 1. Classification Reports
 
 ![Classification Reports](/results/figures/Classification_Reports.png)
 
@@ -79,15 +79,15 @@ The dataset includes **16 building characteristics**:
 
 ## Repository Structure
 <pre>
+   ├── data/
    ├── notebooks/ 
-   ├── data/ 
    ├── results/ 
-      ├── figures/ 
-      ├── models/ 
-   ├── README.md
+   │   ├── figures/         
+   │   └── models/   
+   ├── .gitignore
    ├── LICENSE
-   ├── requirements.txt
-   └── .gitignore
+   ├── README.md
+   └── requirements.txt
 </pre>
 
 
