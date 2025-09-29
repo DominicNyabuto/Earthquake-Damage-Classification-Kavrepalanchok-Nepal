@@ -10,7 +10,7 @@ import joblib
 
 # --- Load trained LightGBM model ---
 best_lgbm = joblib.load(
-    "models/best_lightgbm_model.pkl"
+    "results/models/best_lightgbm_model.pkl"
 )
 
 # --- Load example dataframe for defaults & category info ---
