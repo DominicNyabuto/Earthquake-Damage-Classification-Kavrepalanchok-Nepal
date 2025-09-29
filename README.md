@@ -65,9 +65,9 @@ The dataset includes **16 building characteristics**:
 
 ## Model Performance Visualization
 
-![Model Comparison](results/figures/model_comparison.png)
-![Feature Importance](results/figures/feature_importance_lightgbm.png)
-![Confusion Matrix](results/figures/confusion_matrix_lightgbm.png)
+![Classification Reports](/results/figures/Classification_Reports.png)
+![Feature Importance](results/figures/Confusion_Matrices.png)
+![Confusion Matrix](results/figures/Model_Performance_Comparison.png)
 
 ## Repository Structure
 <pre>
