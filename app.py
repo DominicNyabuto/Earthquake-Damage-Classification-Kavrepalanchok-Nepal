@@ -10,12 +10,12 @@ import joblib
 
 # --- Load trained LightGBM model ---
 best_lgbm = joblib.load(
-    "/workspaces/Earthquake-Damage-Classification-Kavrepalanchok-Nepal/results/models/best_lightgbm_model.pkl"
+    "models/best_lightgbm_model.pkl"
 )
 
 # --- Load example dataframe for defaults & category info ---
 df_clean = pd.read_csv(
-    "/workspaces/Earthquake-Damage-Classification-Kavrepalanchok-Nepal/data/kavrepalanchok_test.csv"
+    "data/kavrepalanchok_test.csv"
 )
 
 # Drop 'b_id' if present
