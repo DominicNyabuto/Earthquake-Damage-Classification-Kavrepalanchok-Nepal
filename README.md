@@ -65,16 +65,25 @@ The dataset includes **16 building characteristics**:
 
 ## Model Performance Visualization
 
+### 1. ClassificationReports
+
 ![Classification Reports](/results/figures/Classification_Reports.png)
+
+### 2. Confusion Matrices
+
 ![Feature Importance](results/figures/Confusion_Matrices.png)
+
+### 3. Model Performance Comparison
+
 ![Confusion Matrix](results/figures/Model_Performance_Comparison.png)
 
 ## Repository Structure
 <pre>
-   ├── notebooks/ # Jupyter notebooks for analysis
-   ├── data/ # Dataset files
-   ├── models/ # Trained model files
-   ├── results/ # Visualizations and reports
+   ├── notebooks/ 
+   ├── data/ 
+   ├── results/ 
+      ├── figures/ 
+      ├── models/ 
    ├── README.md
    ├── LICENSE
    ├── requirements.txt
@@ -88,7 +97,7 @@ The dataset includes **16 building characteristics**:
 2. **Feature Importance**: Structural materials and building age are primary damage predictors
 3. **Model Choice**: LightGBM balances speed, accuracy, and categorical feature handling effectively
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Python 3.8+**: Core programming language
 - **Pandas & NumPy**: Data manipulation and analysis
@@ -97,5 +106,6 @@ The dataset includes **16 building characteristics**:
 - **Matplotlib & Seaborn**: Data visualization
 - **Jupyter Notebook**: Interactive development
 
-## 📋 Requirements
+## Interactive Web App - Streamlit 
+
 
