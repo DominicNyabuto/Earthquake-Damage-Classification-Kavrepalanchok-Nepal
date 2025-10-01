@@ -204,11 +204,11 @@ elif page == "Model Insights":
     ax.legend()
     st.pyplot(fig)
     
-    # SHAP explanation
-    st.markdown("#### SHAP Feature Contribution (Local Interpretability)")
-    explainer = shap.TreeExplainer(best_rf)
-    shap_values = explainer.shap_values(X_test.iloc[:50])
-    st_shap = st.pyplot(shap.summary_plot(shap_values, X_test.iloc[:50], show=False))
+    # # SHAP explanation
+    # st.markdown("#### SHAP Feature Contribution (Local Interpretability)")
+    # explainer = shap.TreeExplainer(best_rf)
+    # shap_values = explainer.shap_values(X_test.iloc[:50])
+    # st_shap = st.pyplot(shap.summary_plot(shap_values, X_test.iloc[:50], show=False))
 
 # ===== Dataset Explorer / EDA =====
 elif page == "Dataset Explorer":
