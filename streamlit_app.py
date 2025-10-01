@@ -106,7 +106,7 @@ from sklearn.metrics import confusion_matrix, classification_report, roc_curve, 
 import shap
 
 # Load model
-best_rf = joblib.load("results/figures/best_rf_model.pkl")
+best_rf = joblib.load("results/models/best_rf_model.pkl")
 
 # Load test data
 X_test = pd.read_csv("/workspaces/Earthquake-Damage-Classification-Kavrepalanchok-Nepal/data/kavrepalanchok_test.csv")
