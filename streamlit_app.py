@@ -114,7 +114,7 @@ st.set_page_config(page_title="Earthquake Damage — Predictions & Insights", la
 
 # -------------------- Helper functions --------------------
 @st.cache_resource
-def load_model(paths=["results/figures/best_rf_model.pkl", "best_rf_model.pkl", "/results/figures/best_rf_model.pkl"]):
+def load_model(paths=["results/models/best_rf_model.pkl", "best_rf_model.pkl", "/results/models/best_rf_model.pkl"]):
     for p in paths:
         try:
             model = joblib.load(p)
