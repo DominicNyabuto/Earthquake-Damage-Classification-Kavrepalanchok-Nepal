@@ -103,7 +103,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 from sklearn.metrics import confusion_matrix, classification_report, roc_curve, auc, precision_recall_curve
-import shap
+# import shap
 
 # Load model
 best_rf = joblib.load("results/models/best_rf_model.pkl")
