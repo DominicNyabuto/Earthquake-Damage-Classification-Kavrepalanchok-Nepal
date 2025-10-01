@@ -109,7 +109,7 @@ from sklearn.metrics import confusion_matrix, classification_report, roc_curve, 
 best_rf = joblib.load("results/models/best_rf_model.pkl")
 
 # Load test data
-X_test = pd.read_csv("/workspaces/Earthquake-Damage-Classification-Kavrepalanchok-Nepal/data/kavrepalanchok_test.csv")
+X_test = pd.read_csv("data/kavrepalanchok_test.csv")
 if "b_id" in X_test.columns:
     X_test = X_test.drop("b_id", axis=1)
 
