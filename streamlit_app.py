@@ -130,6 +130,25 @@ elif page == "Prediction":
     st.title("📝 Predict Damage Severity")
     
     uploaded_file = st.file_uploader("Upload CSV for bulk prediction", type="csv")
+    st.markdown("""
+     **Note:** Your CSV file should have the following structure to work with the model:
+    
+    - **Columns:** 
+        1. `age_building` (int) – Age of the building in years
+        2. `plinth_area_sq_ft` (int) – Total plinth area in square feet
+        3. `height_ft_pre_eq` (int) – Building height in feet before earthquake
+        4. `land_surface_condition` (object) – Condition of the land (e.g., flat, slope)
+        5. `foundation_type` (object) – Type of foundation (e.g., mud, stone, reinforced)
+        6. `roof_type` (object) – Roof material type (e.g., RCC, timber, metal)
+        7. `ground_floor_type` (object) – Material/type of ground floor
+        8. `other_floor_type` (object) – Material/type of upper floors
+        9. `position` (object) – Position of the building (e.g., attached, detached)
+        10. `plan_configuration` (object) – Plan layout (e.g., rectangular, L-shape)
+        11. `superstructure` (object) – Material of main structural system
+    
+    - **Important:** Column names must match exactly as above. Remove any extra columns (like `b_id`) before uploading.  
+    - **Data types:** Ensure numeric columns are integers/floats and categorical columns are strings/objects.
+    """)
     
     if uploaded_file is not None:
         df = pd.read_csv(uploaded_file)
