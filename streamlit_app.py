@@ -219,10 +219,13 @@ if page == "Predictions":
 # =====================
 # Aggregated Summaries
 # =====================
+
 elif page == "Aggregated Summaries":
     st.header("📈 Aggregated Summaries")
     counts = df_results["Predicted_Severity"].value_counts()
     st.plotly_chart(px.pie(values=counts.values, names=counts.index, title="Predicted Damage Distribution"))
+    
+    severe_class = df_results["Predicted_Severity"].max()
 
     # KPIs
     col1, col2, col3 = st.columns(3)
