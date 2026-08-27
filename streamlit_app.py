@@ -136,6 +136,8 @@
 
 
 
+from types import FunctionType
+
 import joblib
 import matplotlib.pyplot as plt
 import numpy as np
@@ -161,6 +163,8 @@ for path in MODEL_PATHS:
         pass
 if model is None:
     st.error("❌ Could not load best_rf model. Ensure the model file exists.")
+
+
 
 # Load test data
 TEST_PATH = "data/kavrepalanchok_test.csv"
@@ -193,7 +197,7 @@ It uses the provided **kavrepalanchok_test.csv** dataset — you don’t need to
 
 # Tabs
 page = st.sidebar.radio("Navigation", ["Predictions", "Aggregated Summaries", "Dataset Explorer", "Model Insights", "About"])
-
+ 
 # =====================
 # Predictions Tab
 # =====================
