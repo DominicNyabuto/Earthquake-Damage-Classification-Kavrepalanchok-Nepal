@@ -175,7 +175,7 @@ if "b_id" in df_test.columns:
 # Predictions
 probs = model.predict_proba(df_test)
 preds = model.predict(df_test)
-df_results = df_test.copy()
+df_results= df_test.copy()
 df_results["Predicted_Severity"] = preds
 df_results[[f"Prob_{i}" for i in range(probs.shape[1])]] = probs
 
